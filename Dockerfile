@@ -14,7 +14,9 @@ ENV S3_SECRET_ACCESS_KEY **None**
 ENV S3_BUCKET **None**
 ENV S3_REGION eu-west-1
 ENV S3_S3V4 no
+ENV S3_URL http://s3-uk-1.sa-catapult.co.uk 
 ENV SCHEDULE **None**
+ 
 
 ADD run.sh run.sh
 ADD backup.sh backup.sh
