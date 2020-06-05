@@ -1,5 +1,5 @@
 FROM alpine:3.9
-LABEL maintainer="Johannes Schickling <schickling.j@gmail.com>"
+LABEL maintainer="Davide de Lerma <davide.delerma@gmail.com>"
 
 ADD install.sh install.sh
 RUN sh install.sh && rm install.sh
@@ -16,6 +16,7 @@ ENV S3_REGION eu-west-1
 ENV S3_S3V4 no
 ENV S3_URL http://s3-uk-1.sa-catapult.co.uk 
 ENV SCHEDULE **None**
+ENV NAMESPACE **None**
  
 
 ADD run.sh run.sh

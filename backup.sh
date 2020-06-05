@@ -76,7 +76,7 @@ echo "copy all database in backup folder"
 
 echo "Uploading dump to $S3_BUCKET"
 old=$(aws --endpoint-url=$S3_URL s3 ls s3://$S3_BUCKET | wc -l)
-aws $AWS_ARGS --endpoint-url=$S3_URL s3 cp postgis_backup.out.gz s3://$S3_BUCKET/postgis_backup_$(date +"%Y-%m-%dT%H:%M:%SZ").out.gz || exit 2
+aws $AWS_ARGS --endpoint-url=$S3_URL s3 cp postgis_backup.out.gz s3://$S3_BUCKET/${NAMESPACE}_postgis_backup_$(date +"%Y-%m-%dT%H:%M:%SZ").out.gz || exit 2
 new=$(aws --endpoint-url=$S3_URL s3 ls s3://$S3_BUCKET | wc -l)
 rm -rf postgis_backup.out.gz
 
