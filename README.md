@@ -40,3 +40,6 @@ You can additionally set the `SCHEDULE` environment variable like `-e SCHEDULE="
 
 More information about the scheduling can be found [here](http://godoc.org/github.com/robfig/cron#hdr-Predefined_schedules).
 
+## Inspired by:
+
+https://github.com/lucaspiller/docker-backup-postgres-s3
