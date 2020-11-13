@@ -16,6 +16,6 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: satapps/postgres-backup
+        repository: davidedelerma/postgres-backup
         tag_with_ref: true
         tag_with_sha: true
