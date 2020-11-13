@@ -17,8 +17,8 @@ postgres:
     POSTGRES_USER: user
     POSTGRES_PASSWORD: password
 
-pgbackups3:
-  image: navenio-docker.jfrog.io/geoserver/postgres_backup:1.0.4
+pgbackups:
+  image: davidedelerma/postgres_backup:1.0.4
   links:
     - postgres
   environment:
